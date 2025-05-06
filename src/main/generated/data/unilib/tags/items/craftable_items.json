@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:acacia_boat",
+    "minecraft:arrow",
+    "minecraft:armor_stand",
+    "minecraft:black_dye",
+    "minecraft:blue_dye",
+    "minecraft:bone_meal",
+    "minecraft:book",
+    "minecraft:beetroot_soup",
+    "minecraft:blaze_powder",
+    "minecraft:bow",
+    "minecraft:bowl",
+    "minecraft:bread",
+    "minecraft:brick",
+    "minecraft:brown_dye",
+    "minecraft:bucket",
+    "minecraft:bundle"
+  ]
+}
