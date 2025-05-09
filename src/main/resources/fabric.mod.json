@@ -3,13 +3,12 @@
 	"id": "unilib",
 	"version": "${version}",
 	"name": "unilib",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Thank you for using the Universal Tag Library",
 	"authors": [
-		"Me!"
+		"Capozi"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/capozi-devv/Unilib"
 	},
 	"license": "GNU v2.0",
 	"icon": "assets/unilib/icon.png",

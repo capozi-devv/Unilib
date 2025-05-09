@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -55,7 +56,8 @@ public class CoreBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .forceAddTag(BlockTags.AXE_MINEABLE)
                 .forceAddTag(BlockTags.SWORD_EFFICIENT);
         getOrCreateTagBuilder(CoreTags.Unbreakable.UNBREAKABLE_BLOCKS)
-                .forceAddTag(BlockTags.WITHER_IMMUNE);
+                .forceAddTag(BlockTags.WITHER_IMMUNE)
+                .add(Blocks.PETRIFIED_OAK_SLAB);
     }
     public CoreBlockTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
