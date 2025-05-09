@@ -11,6 +11,6 @@ public class Unilib implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		Unilib.LOGGER.info("Unilib coming Online...");
 	}
 }

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:completes_find_tree_tutorial",
+    "#minecraft:saplings",
+    "#minecraft:flowers",
+    "#minecraft:planks",
+    "minecraft:lava_bucket",
+    "minecraft:coal",
+    "minecraft:charcoal"
+  ]
+}
