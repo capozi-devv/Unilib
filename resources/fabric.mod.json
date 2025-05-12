@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "unilib",
+	"version": "${version}",
+	"name": "unilib",
+	"description": "Thank you for using the Universal Tag Library",
+	"authors": [
+		"Capozi"
+	],
+	"contact": {
+		"sources": "https://github.com/capozi-devv/Unilib"
+	},
+	"license": "GNU v2.0",
+	"icon": "assets/unilib/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.capozi.unilib.Unilib"
+		],
+		"fabric-datagen": [
+			"net.capozi.unilib.UnilibDataGenerator"
+		]
+	},
+	"mixins": [
+		"unilib.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

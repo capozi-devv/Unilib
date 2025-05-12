@@ -39,16 +39,26 @@ public class CoreTags {
     }
     public static class Breakable{
         public static final TagKey<Block> BREAKABLE_BLOCKS =
-                createBreakableTag("breakable_blocks");
-        private static TagKey<Block> createBreakableTag(String name) {
+                createBreakableBlockTag("breakable_blocks");
+        private static TagKey<Block> createBreakableBlockTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(Unilib.MOD_ID, name));
+        }
+        public static final TagKey<Item> BREAKABLE_BLOCK_ITEMS =
+                createBreakableBlockItemTag("breakable_block_items");
+        private static TagKey<Item> createBreakableBlockItemTag(String name) {
+            return TagKey.of(RegistryKeys.ITEM, new Identifier(Unilib.MOD_ID, name));
         }
     }
     public static class Unbreakable {
         public static final TagKey<Block> UNBREAKABLE_BLOCKS =
-                createUnbreakableTag("unbreakable_blocks");
-        private static TagKey<Block> createUnbreakableTag(String name) {
+                createUnbreakableBlockTag("unbreakable_blocks");
+        private static TagKey<Block> createUnbreakableBlockTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(Unilib.MOD_ID, name));
+        }
+        public static final TagKey<Item> UNBREAKABLE_BLOCK_ITEMS =
+                createUnbreakableBlockItemsTag("unbreakable_block_items");
+        private static TagKey<Item> createUnbreakableBlockItemsTag(String name) {
+            return TagKey.of(RegistryKeys.ITEM, new Identifier(Unilib.MOD_ID, name));
         }
     }
 }

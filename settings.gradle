@@ -1,3 +1,5 @@
+import org.gradle.api.initialization.resolve.RepositoriesMode
+
 pluginManagement {
 	repositories {
 		maven {
@@ -6,5 +8,12 @@ pluginManagement {
 		}
 		mavenCentral()
 		gradlePluginPortal()
+
+	}
+	dependencyResolutionManagement {
+		repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
 	}
 }
