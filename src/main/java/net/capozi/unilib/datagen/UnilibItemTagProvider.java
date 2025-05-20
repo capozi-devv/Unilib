@@ -1,7 +1,8 @@
 package net.capozi.unilib.datagen;
 
-import net.capozi.unilib.CoreTags;
-import net.capozi.unilib.consumable.FuelTags;
+import net.capozi.unilib.foundation.CoreTags;
+import net.capozi.unilib.foundation.items.consumable.FuelTags;
+import net.capozi.unilib.foundation.blocks.natural.NaturalStoneTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.item.Items;
@@ -369,7 +370,7 @@ public class UnilibItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE)
                 .add(Items.WILD_ARMOR_TRIM_SMITHING_TEMPLATE)
                 .add(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE);
-        getOrCreateTagBuilder(FuelTags.FurnaceFuels.FURNACE_FUELS)
+        getOrCreateTagBuilder(FuelTags.FurnaceFuelsTags.FURNACE_FUELS)
                 .forceAddTag(ItemTags.COMPLETES_FIND_TREE_TUTORIAL)
                 .forceAddTag(ItemTags.SAPLINGS)
                 .forceAddTag(ItemTags.FLOWERS)
@@ -377,8 +378,78 @@ public class UnilibItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.LAVA_BUCKET)
                 .add(Items.COAL)
                 .add(Items.CHARCOAL);
-        getOrCreateTagBuilder(FuelTags.EnchantingFuels.ENCHANTING_FUELS)
+        getOrCreateTagBuilder(FuelTags.EnchantingFuelsTags.ENCHANTING_FUELS)
                 .add(Items.LAPIS_LAZULI);
+        getOrCreateTagBuilder(NaturalStoneTags.StoneItemsTags.STONE_ITEMS)
+                .forceAddTag(ItemTags.TERRACOTTA)
+                .forceAddTag(NaturalStoneTags.OreItemsTags.ORE_ITEMS)
+                .add(Items.STONE)
+                .add(Items.DIORITE)
+                .add(Items.ANDESITE)
+                .add(Items.GRANITE)
+                .add(Items.QUARTZ_BLOCK)
+                .add(Items.COBBLESTONE)
+                .add(Items.DEEPSLATE)
+                .add(Items.COBBLED_DEEPSLATE)
+                .add(Items.BLACKSTONE)
+                .add(Items.TUFF)
+                .add(Items.CALCITE)
+                .add(Items.BASALT)
+                .add(Items.END_STONE)
+                .add(Items.SANDSTONE);
+        getOrCreateTagBuilder(NaturalStoneTags.OreItemsTags.ORE_ITEMS)
+                .forceAddTag(ItemTags.COAL_ORES)
+                .forceAddTag(ItemTags.DIAMOND_ORES)
+                .forceAddTag(ItemTags.COPPER_ORES)
+                .forceAddTag(ItemTags.GOLD_ORES)
+                .forceAddTag(ItemTags.EMERALD_ORES)
+                .forceAddTag(ItemTags.IRON_ORES)
+                .forceAddTag(ItemTags.LAPIS_ORES)
+                .forceAddTag(ItemTags.REDSTONE_ORES);
+        getOrCreateTagBuilder(CoreTags.Craftable.CRAFTABLE_BLOCK_ITEMS)
+                .forceAddTag(ItemTags.SIGNS)
+                .forceAddTag(ItemTags.HANGING_SIGNS)
+                .forceAddTag(ItemTags.ANVIL)
+                .forceAddTag(ItemTags.BAMBOO_BLOCKS)
+                .forceAddTag(ItemTags.BANNERS)
+                .forceAddTag(ItemTags.BEDS)
+                .forceAddTag(ItemTags.BUTTONS)
+                .forceAddTag(ItemTags.CANDLES)
+                .forceAddTag(ItemTags.DOORS)
+                .forceAddTag(ItemTags.FENCES)
+                .forceAddTag(ItemTags.FENCE_GATES)
+                .forceAddTag(ItemTags.RAILS)
+                .forceAddTag(ItemTags.SLABS)
+                .forceAddTag(ItemTags.SOUL_FIRE_BASE_BLOCKS)
+                .forceAddTag(ItemTags.STAIRS)
+                .forceAddTag(ItemTags.STONE_BRICKS)
+                .forceAddTag(ItemTags.TERRACOTTA)
+                .forceAddTag(ItemTags.TRAPDOORS)
+                .forceAddTag(ItemTags.WALLS)
+                .forceAddTag(ItemTags.WART_BLOCKS)
+                .forceAddTag(ItemTags.WOOL)
+                .forceAddTag(ItemTags.WOOL_CARPETS)
+                .add(Items.CAKE)
+                .add(Items.CAULDRON)
+                .add(Items.FLOWER_POT)
+                .add(Items.RESPAWN_ANCHOR)
+                .add(Items.LADDER)
+                .add(Items.SCAFFOLDING)
+                .add(Items.MUD)
+                .add(Items.MUD_BRICK_SLAB)
+                .add(Items.MUD_BRICKS)
+                .add(Items.MUD_BRICK_STAIRS)
+                .add(Items.MUD_BRICK_WALL)
+                .add(Items.PACKED_MUD);
+        getOrCreateTagBuilder(CoreTags.Unbreakable.UNBREAKABLE_BLOCK_ITEMS)
+                .add(Items.COMMAND_BLOCK)
+                .add(Items.REPEATING_COMMAND_BLOCK)
+                .add(Items.CHAIN_COMMAND_BLOCK)
+                .add(Items.BEDROCK)
+                .add(Items.BARRIER)
+                .add(Items.JIGSAW)
+                .add(Items.STRUCTURE_BLOCK)
+                .add(Items.STRUCTURE_VOID);
     }
     public UnilibItemTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);

@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:terracotta",
+    "#unilib:ore_blocks",
+    "minecraft:stone",
+    "minecraft:diorite",
+    "minecraft:andesite",
+    "minecraft:granite",
+    "minecraft:quartz_block",
+    "minecraft:cobblestone",
+    "minecraft:deepslate",
+    "minecraft:cobbled_deepslate",
+    "minecraft:blackstone",
+    "minecraft:tuff",
+    "minecraft:calcite",
+    "minecraft:basalt",
+    "minecraft:end_stone",
+    "minecraft:sandstone"
+  ]
+}
