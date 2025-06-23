@@ -1,0 +1,30 @@
+{
+  "button_click": {
+    "sounds": [
+      "menagerie:item/button_click"
+    ]
+  },
+  "film_advance_last": {
+    "sounds": [
+      "menagerie:item/film_advance_last"
+    ]
+  },
+  "flash": {
+    "sounds": [
+      "menagerie:item/flash"
+    ]
+  },
+  "honk": {
+    "sounds": [
+      "menagerie:block/honk"
+    ]
+  },
+  "damnatio_memoriae": {
+    "sounds": [
+      {
+        "name": "menagerie:item/damnatio_memoriae",
+        "stream": true
+      }
+    ]
+  }
+}
