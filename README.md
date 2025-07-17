@@ -1,2 +1,1 @@
-# Unilib
-The Universal Helper Library
+This mods development has been discontinued as of 17/7/25
